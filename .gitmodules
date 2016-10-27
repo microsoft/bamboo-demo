@@ -1,0 +1,6 @@
+[submodule "pid-controller"]
+	path = pid-controller
+	url = https://github.com/ms-iot/pid-controller.git
+[submodule "UniversalMediaEngine"]
+	path = UniversalMediaEngine
+	url = https://github.com/bethoma/UniversalMediaEngine

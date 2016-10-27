@@ -1,0 +1,48 @@
+﻿<UserControl
+    x:Class="Bamboo.Views.ReminderControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Bamboo.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+    <Grid HorizontalAlignment="Center" Margin="0,10,0,10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <TextBlock Name="ReminderName" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
+        <ToggleSwitch Name="ReminderEnabled" Grid.Column="2" HorizontalAlignment="Center" IsOn="False" Toggled="ReminderEnabled_Toggled" />
+        <ComboBox Grid.Column="0" Grid.Row="1" SelectedIndex="0" Name="HourCombo" SelectionChanged="Combo_SelectionChanged">
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+            <ComboBoxItem Content="6"/>
+            <ComboBoxItem Content="7"/>
+            <ComboBoxItem Content="8"/>
+            <ComboBoxItem Content="9"/>
+            <ComboBoxItem Content="10"/>
+            <ComboBoxItem Content="11"/>
+            <ComboBoxItem Content="12"/>
+        </ComboBox>
+        <ComboBox Name="MinuteCombo" SelectionChanged="Combo_SelectionChanged" Grid.Column="1" Grid.Row="1" SelectedIndex="0">
+            <ComboBoxItem Content="00" />
+            <ComboBoxItem Content="15" />
+            <ComboBoxItem Content="30" />
+            <ComboBoxItem Content="45" />
+        </ComboBox>
+        <ComboBox Name="AMPMCombo" SelectionChanged="Combo_SelectionChanged" Grid.Column="2" Grid.Row="1" SelectedIndex="0">
+            <ComboBoxItem Content="AM"/>
+            <ComboBoxItem Content="PM"/>
+        </ComboBox>
+    </Grid>
+</UserControl>

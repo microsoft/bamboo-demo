@@ -1,0 +1,145 @@
+﻿<UserControl
+    x:Class="Bamboo.Views.Schedule"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Bamboo.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <Grid Margin="0,15,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0" Margin="0,44,0,0">
+            <StackPanel Orientation="Vertical">
+            <TextBlock Text="Tips &amp; Tricks" FontSize="24"/>
+            <TextBlock Margin="0,24,0,60" TextWrapping="WrapWholeWords">
+                Your doctor may want you to check your sugars multiple times a day so it's available. Find out exactly when during the day you need to take each of your injections and what to do if you forget to give yourself an injection.
+                <LineBreak/>
+                <LineBreak/>
+                Your doctor may want you to take insulun a half-hour before meals, so it's available when sugar from food enters your bloodstream. Find out exactly when during the day you need to take each of your injections and what to do if you forget to give yourself an injection.
+            </TextBlock>
+            </StackPanel>
+        </Grid>
+        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.ColumnSpan="2" Margin="60,44,0,0">
+            <StackPanel Orientation="Vertical" Name="ReminderStack1"/>
+
+            <StackPanel Orientation="Vertical" Name="ReminderStack2"/>
+
+            <StackPanel Orientation="Vertical" Name="ReminderStack3"/>
+
+        </StackPanel>
+        <Grid Background="Green" Opacity="0.2" Margin="0,0,0,0" Grid.Column="3"/>
+        <Grid Grid.Column="3">
+            <TextBlock Text="History" Margin="44,44,0,0" FontSize="24"/>
+            <TextBlock Text="(in milligrams)" Margin="44,75,0,0" FontSize="12"/>
+            <Button  Margin="0,44,44,0" Height="48" Width="48" HorizontalAlignment="Right" VerticalAlignment="Top" FontFamily="Segoe UI Symbol" Background="Transparent">
+                <SymbolIcon Symbol="ReShare"/>
+            </Button>
+            <StackPanel Orientation="Vertical" Margin="44,125,10,0">
+                <Grid Margin="0,5,0,5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="136" Grid.Column="0" FontSize="18" VerticalAlignment="Center"/>
+                    <TextBlock Text="8/3/2006 07:30 am" Grid.Column="1" FontSize="12" Foreground="Gray" VerticalAlignment="Center"/>
+                </Grid>
+                <Grid Margin="0,5,0,5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="78" Grid.Column="0" FontSize="18" VerticalAlignment="Center"/>
+                    <TextBlock Text="8/3/2006 07:30 am" Grid.Column="1" FontSize="12" Foreground="Gray" VerticalAlignment="Center"/>
+                </Grid>
+                <Grid Margin="0,5,0,5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="No data" Grid.Column="0" FontSize="18" VerticalAlignment="Center"/>
+                    <TextBlock Text="8/3/2006 07:30 am" Grid.Column="1" FontSize="12" Foreground="Gray" VerticalAlignment="Center"/>
+                </Grid>
+                <Grid Margin="0,5,0,5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="110" Grid.Column="0" FontSize="18" VerticalAlignment="Center"/>
+                    <TextBlock Text="8/3/2006 07:30 am" Grid.Column="1" FontSize="12" Foreground="Gray" VerticalAlignment="Center"/>
+                </Grid>
+                <Grid Margin="0,5,0,5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="158" Grid.Column="0" FontSize="18" VerticalAlignment="Center"/>
+                    <TextBlock Text="8/3/2006 07:30 am" Grid.Column="1" FontSize="12" Foreground="Gray" VerticalAlignment="Center"/>
+                </Grid>
+                <Grid Margin="0,5,0,5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="66" Grid.Column="0" FontSize="18" VerticalAlignment="Center"/>
+                    <TextBlock Text="8/3/2006 07:30 am" Grid.Column="1" FontSize="12" Foreground="Gray" VerticalAlignment="Center"/>
+                </Grid>
+                <Grid Margin="0,5,0,5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="237" Grid.Column="0" FontSize="18" VerticalAlignment="Center"/>
+                    <TextBlock Text="8/3/2006 07:30 am" Grid.Column="1" FontSize="12" Foreground="Gray" VerticalAlignment="Center"/>
+                </Grid>
+                <Grid Margin="0,5,0,5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="352" Grid.Column="0" FontSize="18" VerticalAlignment="Center"/>
+                    <TextBlock Text="8/3/2006 07:30 am" Grid.Column="1" FontSize="12" Foreground="Gray" VerticalAlignment="Center"/>
+                </Grid>
+                <Grid Margin="0,5,0,5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="171" Grid.Column="0" FontSize="18" VerticalAlignment="Center"/>
+                    <TextBlock Text="8/3/2006 07:30 am" Grid.Column="1" FontSize="12" Foreground="Gray" VerticalAlignment="Center"/>
+                </Grid>
+                <Grid Margin="0,5,0,5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="133" Grid.Column="0" FontSize="18" VerticalAlignment="Center"/>
+                    <TextBlock Text="8/3/2006 07:30 am" Grid.Column="1" FontSize="12" Foreground="Gray" VerticalAlignment="Center"/>
+                </Grid>
+                <Grid Margin="0,5,0,5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="115" Grid.Column="0" FontSize="18" VerticalAlignment="Center"/>
+                    <TextBlock Text="8/3/2006 07:30 am" Grid.Column="1" FontSize="12" Foreground="Gray" VerticalAlignment="Center"/>
+                </Grid>
+                <Grid Margin="0,5,0,5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="100" Grid.Column="0" FontSize="18" VerticalAlignment="Center"/>
+                    <TextBlock Text="8/3/2006 07:30 am" Grid.Column="1" FontSize="12" Foreground="Gray" VerticalAlignment="Center"/>
+                </Grid>
+            </StackPanel>
+        </Grid>
+        
+    </Grid>
+</UserControl>
